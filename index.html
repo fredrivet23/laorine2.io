@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--
+Excellent, si tu m'autorises, je vais certainement m'en servir...
+tu aurais juste dû permettre de choisir les paramètres pour l'exécution de tes programmes javascript.
+NOTE :                                               20/20
+Accueil: index.html et dossiers cohérents            1/1
+Navigation dans le site                              3/3
+Taleau-Images-listes nouvel attribut                 4/4
+Programme javascript                                 5/5
+CSS feuille de style incluant class                  4/4
+Formulaire                                           3/3
+-->
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  <script src="js/menu.js"></script>
+  <title>Accueil</title>
+</head>
+
+<body>
+  <div id="menu" class="menu" style="width: 250px;">
+    <a class="menu_fermer" onclick="clique_menu()">x</a><br>
+    <a class="selection" href="index.html">Accueil</a>
+    <a onclick="clique_sous_menu()">Cours</a>
+    <div id="sous_menu" class="sous_menu">
+      <a href="pages/cours/boucles.html">Boucles</a>
+      <a href="pages/cours/fonctions-procedures.html">Fonctions et procédures</a>
+      <a href="pages/cours/binaire.html">Binaire</a>
+    </div>
+    <a href="pages/vocabulaire.html">Vocabulaire</a>
+    <a href="pages/langages.html">Langages</a>
+    <a href="pages/quiz.html">Quiz</a>
+  </div>
+  <div id="contenu" class="contenu" style="margin-left: 250px;">
+    <div class="menu_ouvrir"><a onclick="clique_menu()">
+        <h1>☰</h1>
+      </a></div>
+    <h1>Accueil</h1>
+    <CENTER>
+      <TABLE width=100% height=500>
+        <TR>
+          <TH width=50% align="center" colspan=2>Dans ce site, vous trouverez quelques notes de Laorine du
+            cours de la spécialité première NSI 2020.<br>
+            Le site se concentre principalement sur les deux langages de programmation vus en classe, à
+            savoir Python et JavaScript.</TH>
+        </TR>
+        <TR>
+          <TH width=50% align="center">Logo du langage Python :<br><br><img src="images/python.png" alt='photo du code'
+              align=center height=284.4 width=284.4></TH>
+          <TH width=50% align="center">Logo du langage JavaScript :<br><br><img src="images/javascript.png"
+              alt='photo du code' align=center height=274 width=274></TH>
+        </TR>
+      </TABLE>
+    </CENTER>
+  </div>
+</body>
+
+</html>

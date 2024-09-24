@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+  <script src="../js/menu.js"></script>
+  <title> Vocabulaire </title>
+</head>
+
+<body>
+  <div id="menu" class="menu">
+    <a class="menu_fermer" onclick="clique_menu()">x</a><br>
+    <a href="../index.html">Accueil</a>
+    <a onclick="clique_sous_menu()">Cours</a>
+    <div id="sous_menu" class="sous_menu">
+      <a href="cours/boucles.html">Boucles</a>
+      <a href="cours/fonctions-procedures.html">Fonctions et procédures</a>
+      <a href="cours/binaire.html">Binaire</a>
+    </div>
+    <a class="selection" href="vocabulaire.html">Vocabulaire</a>
+    <a href="langages.html">Langages</a>
+    <a href="quiz.html">Quiz</a>
+  </div>
+  <div id="contenu" class="contenu">
+    <div class="menu_ouvrir"><a onclick="clique_menu()">
+        <h1>☰</h1>
+      </a></div>
+    <h1> Vocabulaire</h1>
+    <br><br>
+    <ul>
+      <li><span>Indentation : </span>Disposition particulière du texte d'un programme faisant apparaître des décalages au niveau de la marge.</li>
+      <li><span>Incrémenter : </span>On appelle incrémentation le fait d'ajouter un à une certaine valeur <i>(ex : compteur+=1)</i>.</li>
+      <li><span>Décrémenter : </span>On peut aussi décrémenter ce qui veut dire enlever 1 à la valeur <i>(ex : compteur-=1)</i>.</li>
+      <li><span>Types : </span>Un type définit la nature des valeurs que peut prendre une donnée, ainsi que les opérateurs qui peuvent lui être appliqués.</li>
+      <ul>
+        <li><span>
+            <decoration>integer</decoration>
+          </span> : Un objet de type integer est une représentation des nombres entiers <i>(ex : 1)</i>.</li>
+        <li><span>
+            <decoration>string</decoration>
+          </span> : Un objet de type string est une représentation des caractères <i>(ex : a ou "1")</i>.</li>
+        <li><span>
+            <decoration>float</decoration>
+          </span> : Un objet de type flottant est une représentation des nombres à virgule <i>(ex : 1,5)</i>.</li>
+        <li><span>
+            <decoration>booléen</decoration>
+          </span> : Un objet de type booléen peut prendre deux valeurs : True ou False. Il permet d'évaluer si une propriété est vraie ou fausse <i>(ex : a==3 ou 18<45)</i>. </li>
+      </ul>
+      <li><span>Concaténation :</span> Une concaténation c'est l'addition de deux string <i>(ex : a+"1")</i>. </li>
+      <li><span>Fonction / Procédures : </span>On les utilise pour nommer une partie de programme, et la réutiliser autant de fois que nécessaire. 
+        <i><a href="cours/fonctions-procedures.html" title="cours à ce sujet">cours à ce sujet</a></i></li>
+      <li><span>Paramètre : </span>Un paramètre est une donnée qui attend lors de l'appel de sa fonction ou de sa procédure de savoir quelle valeur elle va prendre. </li>
+    </ul>
+    <br><br>
+    <div class="information"> Proposer un mot et sa définition : </div><br>
+    <form action="mailto:8564@cimf.ca" method="post" enctype="text/plain">
+      <p>
+        <input type="test" name="login" placeholder="login" size="8" required><br><br>
+        <input type="password" name="mdp" placeholder="entrer votre mot de passe" maxlenght="10" required><br><br><br>
+      </p>
+      <p> Proposer un mot : <br>
+        <input name="mot">
+        </input>
+      </p>
+      <p> Proposer sa définition : <br>
+        <textarea name="definition" rows="4" cols="65"></textarea>
+      </p>
+      <p>
+        <input type="submit" value="Envoyer">
+      </p>
+    </form>
+  </div>
+</body>
+
+</html>

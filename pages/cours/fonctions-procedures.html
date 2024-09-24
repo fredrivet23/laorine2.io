@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="../../css/styles.css" />
+  <script src="../../js/fonctions-procedures.js"></script>
+  <script src="../../js/menu.js"></script>
+  <title> Fonctions et Procédures </title>
+</head>
+
+<body>
+  <div id="menu" class="menu">
+    <a class="menu_fermer" onclick="clique_menu()">x</a><br>
+    <a href="../../index.html">Accueil</a>
+    <a onclick="clique_sous_menu()">Cours</a>
+    <div style="display: block;" id="sous_menu" class="sous_menu">
+      <a href="boucles.html">Boucles</a>
+      <a class="selection" href="fonctions-procedures.html">Fonctions et procédures</a>
+      <a href="binaire.html">Binaire</a>
+    </div>
+    <a href="../vocabulaire.html">Vocabulaire</a>
+    <a href="../langages.html">Langages</a>
+    <a href="../quiz.html">Quiz</a>
+  </div>
+  <div id="contenu" class="contenu">
+    <div class="menu_ouvrir"><a onclick="clique_menu()">
+        <h1>☰</h1>
+      </a></div>
+    <h1>Fonctions & Procédures </h1>
+    <CENTER>
+      <TABLE width=100%>
+        <TR>
+          <TH width=25% align="center" colspan=2>Fonctions </TH>
+          <TH width=25% align="center" colspan=2> Procédures </TH>
+        </TR>
+        <TR>
+          <TD width=25% align="center">Explication</TD>
+          <TD width=25% align="center"> Exemple </TD>
+          <TD width=25% align="center">Explication</TD>
+          <TD width=25% align="center"> Exemple </TD>
+        </TR>
+        <TR>
+          <TD width=25% align="center" rowspan=2>L'exécution d'une fonction est une expression, qui retourne une valeur.Elle nécessite donc l'emploi de <B> return </B>. </TD>
+          <TD width=25% align="center">
+            <p><a href="../langages.html#python"><img src="../../images/python.png" alt='photo du code' align=center height=32 width=32></a>
+              Code en Python : </p>
+            <p><img src="../../images/fonctions_procedures/fonction-python.png" alt='photo du code' align=center></p>
+          </TD>
+          <TD width=25% align="center" rowspan=2> L'exécution d'une procédure est une instruction, qui produit donc un effet. </TD>
+          <TD width=25% align="center">
+            <p><a href="../langages.html#python"><img src="../../images/python.png" alt='photo du code' align=center height=32 width=32></a>
+              Code en Python : </p>
+            <p><img src="../../images/fonctions_procedures/procedure-python.png" alt='photo du code' align=center></p>
+          </TD>
+        </TR>
+        <TR>
+          <TD width=25% align="center">
+            <p><a href="../langages.html#javascript"><img src="../../images/javascript.png" alt='photo du code' align=center height=32 width=32></a> Code en JavaScript : </p>
+            <img src="../../images/fonctions_procedures/fonction-js.png" alt='photo du code' align=center>
+            <p><button class="js" type="button" onclick="document.getElementById('run_fonction').innerHTML=divisible(12,3)">Run</button>
+            <div class="information">12 est-il divisible par 3 ? :
+              <div class="information" id="run_fonction"/>
+            </div>
+            </p>
+          </TD>
+          <TD width=25% align="center">
+            <p><a href="../langages.html#javascript"><img src="../../images/javascript.png" alt='photo du code' align=center height=32 width=32></a> Code en JavaScript : </p>
+            <img src="../../images/fonctions_procedures/procedure-js.png" alt='photo du code' align=center>
+            <p><button class="js" type="button" onclick="nombres(6,'run_procedure')">Run</button>
+              <div class="information" id="run_procedure"/>
+            </p>
+          </TD>
+        </TR>
+      </TABLE>
+    </CENTER>
+  </div>
+</body>
+
+</html>

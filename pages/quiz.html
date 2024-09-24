@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+  <script src="../js/menu.js"></script>
+  <title> Petit Quiz </title>
+</head>
+
+<body>
+  <div id="menu" class="menu">
+    <a class="menu_fermer" onclick="clique_menu()">x</a><br>
+    <a href="../index.html">Accueil</a>
+    <a onclick="clique_sous_menu()">Cours</a>
+    <div id="sous_menu" class="sous_menu">
+      <a href="cours/boucles.html">Boucles</a>
+      <a href="cours/fonctions-procedures.html">Fonctions et procédures</a>
+      <a href="cours/binaire.html">Binaire</a>
+    </div>
+    <a href="vocabulaire.html">Vocabulaire</a>
+    <a href="langages.html">Langages</a>
+    <a class="selection" href="quiz.html">Quiz</a>
+  </div>
+  <div id="contenu" class="contenu">
+    <div class="menu_ouvrir"><a onclick="clique_menu()">
+        <h1>☰</h1>
+      </a></div>
+    <h1> Petit Quiz </h1>
+    <br>
+    <CENTER>
+      <TABLE>
+        <form action="mailto:8564@cimf.ca" method="post" enctype="text/plain" accept-charset="utf-8">
+          <TR align=center>
+            <!-- l'utilisation de l'attribut "tabindex" permet de naviguer dans le formulaire grâce à la touche tabulation-->
+            <TD><input tabindex="1" type="text" name="prenom" value="Entrer votre prénom"></TD>
+            <TD>
+              <input tabindex="8" type="submit" value="Envoyer vos réponses par couriel"><br>
+            </TD>
+          </TR>
+          <TR>
+            <TD>
+              <br>
+              <p tabindex="2">Quelle est la différence entre une fonction et une procédure ?<br><br>
+                <input type="radio" name="fonction_procedure" value="aucune">aucune<br>
+                <input type="radio" name="fonction_procedure" value="return">return<br>
+                <input type="radio" name="fonction_procedure" value="le langage">le langage<br>
+                <input type="radio" name="fonction_procedure" value="renvoi">renvoi<br>
+              </p>
+            </TD>
+            <TD>
+              <p tabindex="3">Si je sais combien de fois je veux effectuer la même opération, quelle boucle dois-je
+                utiliser ?<br><br>
+                <input type="radio" name="boucle" value="while">while<br>
+                <input type="radio" name="boucle" value="for">for<br>
+                <input type="radio" name="boucle" value="peu importe">peu importe<br>
+                <input type="radio" name="boucle" value="ne pas utiliser de boucle">ne pas utiliser de boucle<br>
+              </p>
+            </TD>
+          </TR>
+          <TR>
+            <TD>
+              <p tabindex="4">Quels sont les différents types que tu as appris ?<br><br>
+                <input type="checkbox" name="types" value="integer">integer<br>
+                <input type="checkbox" name="types" value="fraction">fraction<br>
+                <input type="checkbox" name="types" value="string">string<br>
+                <input type="checkbox" name="types" value="float">float<br>
+                <input type="checkbox" name="types" value="concatenation">concaténation<br>
+                <input type="checkbox" name="types" value="booleen">booléen<br>
+              </p>
+            </TD>
+            <TD>
+              <p tabindex="5">À quoi sert l'incrémentation ?<br><br>
+                <input type="radio" name="incrementation " value="A enlever 1 à une valeur">À enlever 1 à une valeur<br>
+                <input type="radio" name="incrementation " value="A faire des decalages au niveau de la marge">À faire des décalages au niveau de la marge<br>
+                <input type="radio" name="incrementation " value="A ajouter 1 à une certaine valeur">À ajouter 1 à une certaine valeur<br>
+                <input type="radio" name="incrementation " value="A additionner deux string">À additionner deux string<br>
+              </p>
+            </TD>
+          </TR>
+          <TR>
+            <TD>
+              <p>À quel mot correspnd cette définition : Une donnée qui attend lors de l'appel de sa fonction ou de sa procédure de savoir quelle valeur elle va prendre :<br><br>
+                <select tabindex="6" size="1" name="mot">
+                  <option value="concatenation">Concaténation</option>
+                  <option value="parametre">Paramètre</option>
+                  <option value="indentation">Indentation</option>
+                  <option value="types">Types </option>
+                </select>
+              </p>
+            </TD>
+            <TD>
+              <p>Combien de bonnes réponses pensez-vous avoir ?<br><br>
+                <input tabindex="7" type="number" min="0" max="5" step="1" value="5">
+              </p>
+            </TD>
+          </TR>
+        </form>
+      </TABLE>
+    </CENTER>
+  </div>
+</body>
+
+</html>
